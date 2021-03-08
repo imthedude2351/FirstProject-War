@@ -14,6 +14,13 @@ let playerTwoPile = [];
 /*----- cached element references -----*/
 const rules = document.getElementById('rules');
 
+const playerPointsEl = document.getElementById('playerPoints');
+const computerPointsEl = document.getElementById('computerPoints');
+const cardsPlayerLeftEl = document.getElementById('cardsPlayerLeft');
+const cardsComputerLeftEl = document.getElementById('cardsComputerLeft');
+const battlesWonPlayerEl = document.getElementById('battlesWonPlayer');
+const battlesWonComputerEl = document.getElementById('battlesWonComputer');
+
 const newButton = document.getElementById('shuffleDeal');
 const battleButton = document.getElementById('battle');
 const warButton = document.getElementById('war');
@@ -21,18 +28,38 @@ const mineButton = document.getElementById('mine');
 const restartButton = document.getElementById('restart');
 
 /*----- event listeners -----*/
-newButton.addEventListener('click', deal);
-battleButton.addEventListener('click', battle);
-warButton.addEventListener('click', war);
-mineButton.addEventListener('click', mine);
-restartButton.addEventListener('click', restart);
+newButton.addEventListener('click', handleDeal);
+battleButton.addEventListener('click', handleBattle);
+warButton.addEventListener('click', handleWar);
+mineButton.addEventListener('click', handleMine);
+restartButton.addEventListener('click', handleRestart);
 
 /*----- functions -----*/
 init();
 
+function handleDeal(evt) {
+    
+}
+
+function handleBattle(evt) {
+
+}
+
+function handleWar(evt) {
+
+}
+
+function handleMine(evt) {
+
+}
+
+function handleRestart(evt) {
+
+}
+
 function init() {
     // Initialize all state
-    shuffleDeck = shuffle(deck);
+    shuffleDeck = [];
     playerOnePile = [];
     playerTwoPile = [];
     playerOneHand = [];
@@ -42,5 +69,6 @@ function init() {
 }
 
 function render() {
+    // Render the field
 
 }
