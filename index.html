@@ -7,6 +7,7 @@
     <title>First Project: War</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/cards/cardstarter.min.css">
+    <link rel="stylesheet" href="css/cards/cards.css"
     <script defer src="js/main.js"></script>
 </head>
 <body>
@@ -18,30 +19,32 @@
     
   <article class="box">
 
-    <section class="player">
+    <section id="player">
       <h2>Player 1</h2>
       <div id="playerInfo">
-        <div class="playerPoints"></div>
-        <div class="cardsPlayerLeft"></div>
-        <div class="battlesWonPlayer"></div>
+        <div class="cardsPlayerLeft">26</div>
       </div>
     </section>
 
-    <section class="computer">
-      <h2>Player 2</h2>
-      <div class="computerInfo">
-        <div class="computerPoints"></div>
-        <div class="cardsComputerLeft"></div>
-        <div class="battlesWonComputer"></div>
+    <section id="messagingBoard">
+      <div class="cards" id="playerHand"></div>
+      <div id="playerCards"></div>
+      <h2 id="textHere">Fight!</h2>
+      <div class="cards" id="computerHand"></div>
+      <div id="computerCards"></div>
+    </section>
+
+    <section id="computer">
+      <h2>Computer</h2>
+      <div id="computerInfo">
+        <div class="cardsComputerLeft">26</div>
       </div> 
     </section>
     
     <footer class="buttons">
-      <button id="shuffleDeal">Shuffle and Deal!</button>
-      <button id="battle">Battle!</button>
-      <button id="war">War</button>
-      <button id="mine">Take your Cards</button>
-      <button id="restart">Try Again</button>
+      <button id="mainButton">Shuffle and Deal!</button>
+      <button id="warButton">War!</button>
+      <button id="restart">Play Again</button>
     </footer>
 
   </article>
