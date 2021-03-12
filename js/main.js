@@ -23,11 +23,11 @@ mainButton.addEventListener('click', handleGame);
 init();
 
 function renderShuffledDeck() {
-  const tempDeck = [...ogDeck];
+  const newDeck = [...ogDeck];
   shuffledDeck = [];
-  while (tempDeck.length) {
-    const rndIdx = Math.floor(Math.random() * tempDeck.length);
-    shuffledDeck.push(tempDeck.splice(rndIdx, 1)[0]);
+  while (newDeck.length) {
+    const rndIdx = Math.floor(Math.random() * newDeck.length);
+    shuffledDeck.push(newDeck.splice(rndIdx, 1)[0]);
   }
   return shuffledDeck;
 }
@@ -49,7 +49,7 @@ function init() {
   shuffledDeck = renderShuffledDeck();
   playerOneDeck = shuffledDeck.splice(0, 26);
   playerTwoDeck = shuffledDeck;
-  rules.innerHTML = "Click <i>Battle</i> to begin";
+  rules.innerHTML = "Click your <i>Card</i> to begin";
   render();
 }
 
@@ -57,16 +57,18 @@ function handleGame() {
     let playerCard = playerOneDeck.shift()
     let computerCard = playerTwoDeck.shift()
     rules.innerHTML = "This is War!"
+    // Comparing the cards and deciding who gets them
     if (playerCard.value > computerCard.value) {
         playerOneDeck.push(playerCard, computerCard) 
     } else if (playerCard.value < computerCard.value) {
         playerTwoDeck.push(playerCard, computerCard)
     } else {
-        playerOneDeck.push(playerCard)
-        playerTwoDeck.push(computerCard)
+         playerOneDeck.push(playerCard)
+         playerTwoDeck.push(computerCard)
     } 
     winner = endGame()
     render()
+    //War function would be invoked and to be added here.
 }
 
 function endGame() {
@@ -90,4 +92,4 @@ function render() {
   computerCards.innerHTML = `<div class ="card ${computerCardFace.face}"></div>`
   cardsComputerLeftEl.textContent = `${playerTwoDeck.length}`
   cardsPlayerLeftEl.textContent = `${playerOneDeck.length}`
-}
+}  
