@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Project: War</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/cards/cardstarter.min.css">
-    <link rel="stylesheet" href="css/cards/cards.css"
+    <link rel="stylesheet" href="css/cards/cards.css">
     <script defer src="js/main.js"></script>
 </head>
 <body>
 
   <header>
     <h1>War!</h1>
-    <h3 id="rules">Rules (TODOOOOOOOOOOOOO)</h3>
+    <h3 id="rules">Rules</h3>
   </header>
     
   <article class="box">
@@ -22,29 +21,25 @@
     <section id="player">
       <h2>Player 1</h2>
       <div id="playerInfo">
-        <div class="cardsPlayerLeft">26</div>
+        <div id="cardsPlayerLeft">26</div>
       </div>
     </section>
 
     <section id="messagingBoard">
-      <div class="cards" id="playerHand"></div>
       <div id="playerCards"></div>
-      <h2 id="textHere">Fight!</h2>
-      <div class="cards" id="computerHand"></div>
       <div id="computerCards"></div>
     </section>
 
     <section id="computer">
-      <h2>Computer</h2>
       <div id="computerInfo">
-        <div class="cardsComputerLeft">26</div>
+        <div id="cardsComputerLeft">26</div>
       </div> 
+      <h2>Computer</h2>
     </section>
     
     <footer class="buttons">
-      <button id="mainButton">Shuffle and Deal!</button>
-      <button id="warButton">War!</button>
-      <button id="restart">Play Again</button>
+      <button id="mainButton">Battle!</button>
+      <button id="replayButton">Restart</button>
     </footer>
 
   </article>
