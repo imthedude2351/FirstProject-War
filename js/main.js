@@ -1,7 +1,7 @@
 /*----- constants -----*/
 const suits = ['s', 'c', 'd', 'h'];
 const ranks = ['02', '03', '04', '05', '06', '07', '08', '09', '10', 'J', 'Q', 'K', 'A'];
-const masterDeck = buildMasterDeck();
+const ogDeck = buildDeck();
 
 /*----- app's state (variables) -----*/
 let shuffledDeck;
@@ -16,16 +16,14 @@ const cardsComputerLeftEl = document.querySelector("#cardsComputerLeft");
 const playerCards = document.getElementById("playerCards");
 const computerCards = document.getElementById("computerCards");
 const mainButton = document.getElementById("mainButton");
-const replayBtn = document.getElementById("replayButton");
 /*----- event listeners -----*/
 mainButton.addEventListener('click', handleGame);
-replayBtn.addEventListener('click', init);
 
 /*----- functions -----*/
 init();
 
 function renderShuffledDeck() {
-  const tempDeck = [...masterDeck];
+  const tempDeck = [...ogDeck];
   shuffledDeck = [];
   while (tempDeck.length) {
     const rndIdx = Math.floor(Math.random() * tempDeck.length);
@@ -34,7 +32,7 @@ function renderShuffledDeck() {
   return shuffledDeck;
 }
 
-function buildMasterDeck() {
+function buildDeck() {
   const deck = [];
   suits.forEach(function(suit) {
     ranks.forEach(function(rank) {
@@ -92,5 +90,4 @@ function render() {
   computerCards.innerHTML = `<div class ="card ${computerCardFace.face}"></div>`
   cardsComputerLeftEl.textContent = `${playerTwoDeck.length}`
   cardsPlayerLeftEl.textContent = `${playerOneDeck.length}`
-  replayBtn.style.visibility = winner ? "visible" : "hidden";
 }
