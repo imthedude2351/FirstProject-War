@@ -24,7 +24,6 @@ Source: [WikiPedia](https://en.wikipedia.org/wiki/War_(card_game))
 
 HTML, CSS, JavaScript
 
-file:///Users/xavier/code/FirstProject-War/index.html
 
 ## Next Steps
 
