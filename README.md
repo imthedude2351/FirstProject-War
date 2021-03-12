@@ -14,7 +14,7 @@ Game designer Greg Costikyan has observed that since there are no choices in the
 
 Source: [WikiPedia](https://en.wikipedia.org/wiki/War_(card_game))
 
-![War] (https://imgur.com/x9txN6V.png)
+<blockquote class="imgur-embed-pub" lang="en" data-id="x9txN6V"><a href="https://imgur.com/x9txN6V">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 ![War] (https://imgur.com/QC2mjil.png)
 ![War] (https://imgur.com/az1hJxJ.png)
 
