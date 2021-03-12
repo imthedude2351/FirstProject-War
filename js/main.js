@@ -71,14 +71,6 @@ function handleGame() {
     //War function would be invoked and to be added here.
 }
 
-function endGame() {
-    if (playerOneDeck.length === 52) {
-        winner = true
-    } else if(playerTwoDeck.length === 52){
-        winner = false
-    }
-    return winner;
-}
 
 function render() {
   if (winner) {
@@ -93,3 +85,12 @@ function render() {
   cardsComputerLeftEl.textContent = `${playerTwoDeck.length}`
   cardsPlayerLeftEl.textContent = `${playerOneDeck.length}`
 }  
+
+function endGame() {
+  if (playerOneDeck.length === 52) {
+    winner = true
+  } else if(playerTwoDeck.length === 52){
+    winner = false
+  }
+  return winner;
+}
