@@ -14,11 +14,11 @@ Game designer Greg Costikyan has observed that since there are no choices in the
 
 Source: [WikiPedia](https://en.wikipedia.org/wiki/War_(card_game))
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="x9txN6V"><a href="https://imgur.com/x9txN6V">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<blockquote class="imgur-embed-pub" lang="en" data-id="x9txN6V"><a href="https://imgur.com/x9txN6V">View post on imgur.com</a></blockquote>
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="QC2mjil"><a href="https://imgur.com/QC2mjil">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<blockquote class="imgur-embed-pub" lang="en" data-id="QC2mjil"><a href="https://imgur.com/QC2mjil">View post on imgur.com</a></blockquote>
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="az1hJxJ"><a href="https://imgur.com/az1hJxJ">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<blockquote class="imgur-embed-pub" lang="en" data-id="az1hJxJ"><a href="https://imgur.com/az1hJxJ">View post on imgur.com</a></blockquote>
 
 ## Technologies Used
 
