@@ -47,8 +47,8 @@ function buildDeck() {
 
 function init() {
   shuffledDeck = renderShuffledDeck();
-  playerOneDeck = shuffledDeck.splice(0, 26);
-  playerTwoDeck = shuffledDeck;
+  playerOneDeck = shuffledDeck;
+  playerTwoDeck = shuffledDeck.splice(0, 26);
   rules.innerHTML = "Click your <i>Card</i> to begin";
   render();
 }
@@ -62,13 +62,22 @@ function handleGame() {
         playerOneDeck.push(playerCard, computerCard) 
     } else if (playerCard.value < computerCard.value) {
         playerTwoDeck.push(playerCard, computerCard)
-    } else {
-         playerOneDeck.push(playerCard)
-         playerTwoDeck.push(computerCard)
-    } 
+    }// else {
+    //      
+    //      warFunction would go here
+    // } 
     winner = endGame()
     render()
     //War function would be invoked and to be added here.
+}
+
+function endGame() {
+  if (playerOneDeck.length === 30) {
+    winner = true
+  } else if(playerTwoDeck.length === 30){
+    winner = false
+  }
+  return winner;
 }
 
 
@@ -85,12 +94,3 @@ function render() {
   cardsComputerLeftEl.textContent = `${playerTwoDeck.length}`
   cardsPlayerLeftEl.textContent = `${playerOneDeck.length}`
 }  
-
-function endGame() {
-  if (playerOneDeck.length === 52) {
-    winner = true
-  } else if(playerTwoDeck.length === 52){
-    winner = false
-  }
-  return winner;
-}
