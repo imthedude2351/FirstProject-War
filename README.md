@@ -20,6 +20,7 @@ Source: [WikiPedia](https://en.wikipedia.org/wiki/War_(card_game))
 ![screenshot 2](/images/2.png)
 ![screenshot 3](/images/3.png)
 
+
 ## Technologies Used
 
 HTML, CSS, JavaScript
